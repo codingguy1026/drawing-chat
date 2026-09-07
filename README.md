@@ -1,10 +1,13 @@
-# 미니챗봇
+# Drawing Chat
 
-Floating Island UI를 가진 가벼운 브라우저 기반 미니 챗봇 프로토타입입니다.
+방마다 성격을 고르는 **Next.js 기반 대화방 챗봇 프로토타입**입니다.
+
+기존 파일 하나짜리 HTML 챗봇에서 Next.js + TypeScript 구조로 이식했습니다.
 
 ## 현재 기능
 
-- 파일 하나로 실행되는 정적 HTML 앱
+- Next.js App Router 구조
+- TypeScript 기반 상태 관리
 - Floating Island UI 디자인
 - 이전 채팅 사이드바
 - 새 채팅 생성
@@ -16,22 +19,40 @@ Floating Island UI를 가진 가벼운 브라우저 기반 미니 챗봇 프로�
   - 📚 공부 모드
   - 💡 아이디어
   - ⚡ 짧은 답변
+- 타입별 응답 톤 변경
 - localStorage 기반 대화 저장
 - 입력 중 점 애니메이션
 - 메시지 시간 표시
-- 한글 조합 중 Enter 중복 입력 방지
-- 사용자 입력 XSS 방지
+- 봇 아바타 제거
+- 모바일 사이드바 지원
 
 ## 실행 방법
 
-`index.html` 파일을 브라우저에서 열면 바로 실행됩니다.
+```bash
+npm install
+npm run dev
+```
 
-서버, 빌드 도구, 외부 라이브러리가 필요 없습니다.
+Codespaces에서는 실행 후 포트가 열리면 브라우저에서 확인하면 됩니다.
+
+## 프로젝트 구조
+
+```text
+app/
+  globals.css
+  layout.tsx
+  page.tsx
+next.config.mjs
+package.json
+tsconfig.json
+```
 
 ## 다음 개발 후보
 
-- 다크 모드
-- 채팅방 이름 직접 수정
-- 메시지 복사 버튼
 - 실제 AI API 연결
-- Next.js + TypeScript 버전으로 이식
+- 채팅방 이름 직접 수정
+- 다크 모드
+- 메시지 복사 버튼
+- 타입별 컬러 테마
+- Supabase 로그인/저장
+- Vercel 배포

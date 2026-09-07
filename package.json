@@ -1,16 +1,22 @@
 {
   "name": "drawing-chat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "A floating island style local chatbot prototype.",
-  "type": "module",
+  "description": "A Next.js floating room-based chatbot prototype.",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "start": "npm run dev",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "vite": "^7.1.0"
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
   }
 }
